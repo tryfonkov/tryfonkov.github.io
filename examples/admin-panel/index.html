@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin panel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+			<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-collapse">
+					<span class="sr-only">Navigation</span>
+		<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Control Panel</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><i class="glyphicon glyphicon-user"></i> View Profile</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+						</ul>
+					</li>
+					<li><a href="#" target="_blank"><i class="glyphicon glyphicon-link"></i> Site</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<aside class="col-sm-3 sidebar-offcanvas">
+				<h3><i class="glyphicon glyphicon-briefcase"></i> Toolbox</h3>
+				<hr>
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#"><i class="glyphicon glyphicon-flash"></i> Alerts</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-link"></i> Links</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-book"></i> Books</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-briefcase"></i> Tools</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-time"></i> Real-Time</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-plus"></i> Advanced...</a></li>
+				</ul>
+				<hr>
+			</aside>
+			<div class="col-sm-9">
+				<h3><i class="glyphicon glyphicon-menu-hamburger offcanvas-menu-button" data-toggle="offcanvas"></i> <i class="glyphicon glyphicon-dashboard"></i> Dashboard</h3>
+				<hr>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="well">Inbox Messages <span class="badge pull-right">6</span></div>
+						<hr>
+						<div class="panel panel-default">
+							<div class="panel-heading">Progressing Status</div>
+							<div class="panel-body">
+								<small>Complite</small>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								<small>In Progress</small>
+								<div class="progress">
+									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+										<span class="sr-only">20% Complete</span>
+									</div>
+								</div>
+								<small>Alt Risk</small>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">80% Complete (danger)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<ul class="nav nav-justified">
+							<li><a href="#"><i class="glyphicon glyphicon-cog"></i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-heart"></i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-comment"></i><span class="badge new">3</span></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-plus-sign"></i></a></li>
+						</ul>
+						<hr>
+						<p class="text-left">This is a responsive dashboard-style layout that uses <a href="#">Bootstrap 3</a>. You can use this template as a starting point to create something more unique.</p>
+						<p class="text-left">Visit the Bootstrap Playground at Bootply to tweak this layout, or discover 1000's of Bootstrap code examples and snippets.</p>
+						<div class="btn-group btn-group-justified" >
+							<a class="btn btn-info"><i class="glyphicon glyphicon-plus"></i><br>Service</a>
+							<a class="btn btn-info"><i class="glyphicon glyphicon-cloud"></i><br>Cloud</a>
+							<a class="btn btn-info"><i class="glyphicon glyphicon-cog"></i><br>Tools</a>
+							<a class="btn btn-info"><i class="glyphicon glyphicon-question-sign"></i><br>Help</a>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<hr>
+				<div class="row row-offcanvas row-offcanvas-left">
+					<aside class="col-sm-3 sidebar-offcanvas">
+						<h3><i class="glyphicon glyphicon-list-alt"></i> Actions</h3>
+						<hr>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="#"><i class="glyphicon glyphicon-list"></i> Layouts &amp; Templates</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-briefcase"></i> Toolbox</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-link"></i> Widgets</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-book"></i> Pages</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-star"></i> Social Media</a></li>
+						</ul>
+						<hr>
+					</aside>
+					<div class="col-sm-9">
+						<h3><i class="glyphicon glyphicon-menu-hamburger offcanvas-menu-button" data-toggle="offcanvas"></i> <i class="glyphicon glyphicon-list-alt"></i> Reports</h3>
+						<hr>
+						<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Visits</th><th>ROI</th><th>Source</th><th>Description and Notes</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>45</td>
+									<td>2.45%</td>
+									<td>Direct</td>
+									<td>Sam sapien massa, aliquam in cursus ut, ullamcorper in tortor. 
+										Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+									</td>
+								</tr>
+								<tr>
+									<td>289</td>
+									<td>56.2%</td>
+									<td>Referral</td>
+									<td>After RWD massa, aliquam in cursus ut, ullamcorper in tortor. 
+										Aliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+									</td>
+								</tr>
+								<tr>
+									<td>98</td>
+									<td>25%</td>
+									<td>Type</td>
+									<td>Wil sapien massa, aliquam in cursus ut, ullamcorper in tortor. 
+										Liquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+									</td>
+								</tr>
+								<tr>
+									<td>109</td>
+									<td>8%</td>
+									<td>..</td>
+									<td>Forfoot aliquam in cursus ut, ullamcorper in tortor. 
+										Okma mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+									</td>
+								</tr>
+								<tr>
+									<td>34</td>
+									<td>14%</td>
+									<td>..</td>
+									<td>Mikel sapien massa, aliquam in cursus ut, ullamcorper in tortor. 
+										Maliquam mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<hr>
+				<h3><i class="glyphicon glyphicon-user"></i> My Profile</h3>
+				<hr>
+				<div class="col-sm-8">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li class="active"><a href="#profile" id="profile-tab" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
+						<li><a href="#messages" id="messages-tab" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i> Messages</a></li>
+						<li><a href="#settings" id="settings-tab" data-toggle="tab"><i class="glyphicon glyphicon-wrench"></i> Settings</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="profile">
+							<br>
+							<p>Lorem profile dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+								Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+								dolor, in sagittis nisi.
+							</p>
+						</div>
+						<div class="tab-pane" id="messages">
+							<br>
+							<p>Message ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+								Quisque mauris augu.
+							</p>
+						</div>
+						<div class="tab-pane" id="settings">
+							<br>
+							<p>Lorem settings dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+								Quisque mauris augue, molestie.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Friends</div>
+						<div class="panel-body">
+							<div class="col-sm-4 text-center">
+								<a href=""><img src="http://placehold.it/80/BBBBBB/FFF" class="img-circle img-responsive" alt="friend-image"></a>
+							</div>
+							<div class="col-sm-4 text-center">
+								<a href=""><img src="http://placehold.it/80/BBBBBB/FFF" class="img-circle img-responsive" alt="friend-image"></a>
+							</div>
+							<div class="col-sm-4 text-center">
+								<a href=""><img src="http://placehold.it/80/BBBBBB/FFF" class="img-circle img-responsive" alt="friend-image"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<hr>
+				<h3><i class="glyphicon glyphicon-new-window offcanvas-menu-button" data-toggle="offcanvas"></i> <i class="glyphicon glyphicon-list"></i> Requests</h3>
+				<hr>
+				<div class="row row-offcanvas row-offcanvas-left">
+					<aside class="col-sm-4 sidebar-offcanvas">
+						<div class="panel panel-default">
+							<div class="panel-heading">New Request <i class="glyphicon glyphicon-new-window pull-right hidden-xs"></i></div>
+							<div class="panel-body">
+								<form class="form form-vertical">
+									<div class="control-group">
+										<label for="inputName">Name</label>
+										<div class="controls">
+											<input type="text" id="inputName" class="form-control" placeholder="Enter Name">
+										</div>
+									</div>      
+									<div class="control-group">
+										<label for="inputTitle">Title</label>
+										<div class="controls">
+											<input type="text" id="inputTitle" class="form-control" placeholder="Enter Title">
+										</div>
+									</div>   
+									<div class="control-group">
+										<label for="inputText">Details</label>
+										<div class="controls">
+											<textarea class="form-control" id="inputText"></textarea>
+										</div>
+									</div> 
+									<div class="control-group">
+										<label for="inputName">Select</label>
+										<div class="controls">
+											<select class="form-control">
+												<option>General Question</option>
+												<option>Second Question</option>
+												<option>Low Level Question</option>
+											</select>
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="controls">
+											<br>
+											<button type="submit" class="btn btn-primary">Post</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</aside>
+					<div class="col-sm-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">Request list <i class="glyphicon glyphicon-wrench pull-right"></i></div>
+							<div class="panel-body">
+								<div class="list-group">
+									<a href="#" class="list-group-item active">Cras justo odio</a>
+									<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+									<a href="#" class="list-group-item">Morbi leo risus</a>
+									<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+									<a href="#" class="list-group-item">Morbi leo risus</a>
+								</div>
+							</div>
+						</div>
+						<div class="alert alert-info alert-dismissible fade in" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+							Please remember to <a href="#">Logout</a> for classified security.
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center">This Bootstrap 3 dashboard layout is compliments of Bootply.com</p>
+			</div>
+		</div>
+	</footer>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/offcanvas.js"></script>
+</body>
+</html>

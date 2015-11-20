@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notes App</title>
+	<link rel="stylesheet" href="http://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<style>
+		th, td {
+			text-align: center;
+		}
+		td:first-child {
+			text-align: left;
+		}
+		i.close {
+			float: none;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Заметки</h1>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table id="notes" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Текст</th>
+							<th>Дата</th>
+							<th>Действия</th>
+						</tr>
+					</thead>
+					<tbody>												
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#" id="add-note" class="btn btn-primary">Добавить заметку</a>
+				<form class="hidden">
+					<div class="form-group">
+						<label for="note-text">Текст заметки</label>
+						<textarea id="note-text" class="form-control"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary" disabled="disabled">Добавить</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="main.js"></script>	
+</body>
+</html>
